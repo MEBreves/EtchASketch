@@ -37,15 +37,15 @@ Partial Class EtchASketchForm
         Me.DrawWaveformsButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
         Me.ClearButton = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.ColorBox1 = New System.Windows.Forms.PictureBox()
+        Me.ColorBox2 = New System.Windows.Forms.PictureBox()
+        Me.ColorBox3 = New System.Windows.Forms.PictureBox()
+        Me.ColorBox6 = New System.Windows.Forms.PictureBox()
+        Me.ColorBox5 = New System.Windows.Forms.PictureBox()
+        Me.ColorBox4 = New System.Windows.Forms.PictureBox()
+        Me.ColorBox9 = New System.Windows.Forms.PictureBox()
+        Me.ColorBox8 = New System.Windows.Forms.PictureBox()
+        Me.ColorBox7 = New System.Windows.Forms.PictureBox()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
         Me.ThicknessSlider = New System.Windows.Forms.TrackBar()
@@ -58,15 +58,15 @@ Partial Class EtchASketchForm
         Me.ClearDrawingContextToolStrip = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.DisplayPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ColorBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ColorBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ColorBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ColorBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ColorBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ColorBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ColorBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ColorBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ColorBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ThicknessSlider, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -95,7 +95,7 @@ Partial Class EtchASketchForm
         Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
-        Me.MenuStrip.Size = New System.Drawing.Size(1800, 40)
+        Me.MenuStrip.Size = New System.Drawing.Size(1800, 42)
         Me.MenuStrip.TabIndex = 2
         Me.MenuStrip.Text = "MenuStrip1"
         '
@@ -103,51 +103,51 @@ Partial Class EtchASketchForm
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(71, 36)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(71, 38)
         Me.FileToolStripMenuItem.Text = "&File"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(184, 44)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(359, 44)
         Me.ExitToolStripMenuItem.Text = "E&xit"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SelectColorToolStripMenuItem, Me.DrawWaveformsToolStripMenuItem, Me.ClearToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(74, 36)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(74, 38)
         Me.EditToolStripMenuItem.Text = "&Edit"
         '
         'SelectColorToolStripMenuItem
         '
         Me.SelectColorToolStripMenuItem.Name = "SelectColorToolStripMenuItem"
-        Me.SelectColorToolStripMenuItem.Size = New System.Drawing.Size(327, 44)
+        Me.SelectColorToolStripMenuItem.Size = New System.Drawing.Size(359, 44)
         Me.SelectColorToolStripMenuItem.Text = "&Select Color"
         '
         'DrawWaveformsToolStripMenuItem
         '
         Me.DrawWaveformsToolStripMenuItem.Name = "DrawWaveformsToolStripMenuItem"
-        Me.DrawWaveformsToolStripMenuItem.Size = New System.Drawing.Size(327, 44)
+        Me.DrawWaveformsToolStripMenuItem.Size = New System.Drawing.Size(359, 44)
         Me.DrawWaveformsToolStripMenuItem.Text = "&Draw Waveforms"
         '
         'ClearToolStripMenuItem
         '
         Me.ClearToolStripMenuItem.Name = "ClearToolStripMenuItem"
-        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(327, 44)
+        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(359, 44)
         Me.ClearToolStripMenuItem.Text = "&Clear"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(84, 36)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(84, 38)
         Me.HelpToolStripMenuItem.Text = "&Help"
         '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(212, 44)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(359, 44)
         Me.AboutToolStripMenuItem.Text = "&About"
         '
         'DrawWaveformsButton
@@ -177,86 +177,86 @@ Partial Class EtchASketchForm
         Me.ClearButton.Text = "&Clear Box"
         Me.ClearButton.UseVisualStyleBackColor = True
         '
-        'PictureBox2
+        'ColorBox1
         '
-        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox2.Location = New System.Drawing.Point(1571, 120)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(61, 56)
-        Me.PictureBox2.TabIndex = 6
-        Me.PictureBox2.TabStop = False
+        Me.ColorBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ColorBox1.Location = New System.Drawing.Point(1571, 120)
+        Me.ColorBox1.Name = "ColorBox1"
+        Me.ColorBox1.Size = New System.Drawing.Size(61, 56)
+        Me.ColorBox1.TabIndex = 6
+        Me.ColorBox1.TabStop = False
         '
-        'PictureBox3
+        'ColorBox2
         '
-        Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox3.Location = New System.Drawing.Point(1651, 120)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(61, 56)
-        Me.PictureBox3.TabIndex = 7
-        Me.PictureBox3.TabStop = False
+        Me.ColorBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ColorBox2.Location = New System.Drawing.Point(1651, 120)
+        Me.ColorBox2.Name = "ColorBox2"
+        Me.ColorBox2.Size = New System.Drawing.Size(61, 56)
+        Me.ColorBox2.TabIndex = 7
+        Me.ColorBox2.TabStop = False
         '
-        'PictureBox4
+        'ColorBox3
         '
-        Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox4.Location = New System.Drawing.Point(1730, 120)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(61, 56)
-        Me.PictureBox4.TabIndex = 8
-        Me.PictureBox4.TabStop = False
+        Me.ColorBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ColorBox3.Location = New System.Drawing.Point(1730, 120)
+        Me.ColorBox3.Name = "ColorBox3"
+        Me.ColorBox3.Size = New System.Drawing.Size(61, 56)
+        Me.ColorBox3.TabIndex = 8
+        Me.ColorBox3.TabStop = False
         '
-        'PictureBox7
+        'ColorBox6
         '
-        Me.PictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox7.Location = New System.Drawing.Point(1730, 199)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(61, 56)
-        Me.PictureBox7.TabIndex = 11
-        Me.PictureBox7.TabStop = False
+        Me.ColorBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ColorBox6.Location = New System.Drawing.Point(1730, 199)
+        Me.ColorBox6.Name = "ColorBox6"
+        Me.ColorBox6.Size = New System.Drawing.Size(61, 56)
+        Me.ColorBox6.TabIndex = 11
+        Me.ColorBox6.TabStop = False
         '
-        'PictureBox6
+        'ColorBox5
         '
-        Me.PictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox6.Location = New System.Drawing.Point(1651, 199)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(61, 56)
-        Me.PictureBox6.TabIndex = 10
-        Me.PictureBox6.TabStop = False
+        Me.ColorBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ColorBox5.Location = New System.Drawing.Point(1651, 199)
+        Me.ColorBox5.Name = "ColorBox5"
+        Me.ColorBox5.Size = New System.Drawing.Size(61, 56)
+        Me.ColorBox5.TabIndex = 10
+        Me.ColorBox5.TabStop = False
         '
-        'PictureBox5
+        'ColorBox4
         '
-        Me.PictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox5.Location = New System.Drawing.Point(1571, 199)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(61, 56)
-        Me.PictureBox5.TabIndex = 9
-        Me.PictureBox5.TabStop = False
+        Me.ColorBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ColorBox4.Location = New System.Drawing.Point(1571, 199)
+        Me.ColorBox4.Name = "ColorBox4"
+        Me.ColorBox4.Size = New System.Drawing.Size(61, 56)
+        Me.ColorBox4.TabIndex = 9
+        Me.ColorBox4.TabStop = False
         '
-        'PictureBox10
+        'ColorBox9
         '
-        Me.PictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox10.Location = New System.Drawing.Point(1730, 279)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(61, 56)
-        Me.PictureBox10.TabIndex = 14
-        Me.PictureBox10.TabStop = False
+        Me.ColorBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ColorBox9.Location = New System.Drawing.Point(1730, 279)
+        Me.ColorBox9.Name = "ColorBox9"
+        Me.ColorBox9.Size = New System.Drawing.Size(61, 56)
+        Me.ColorBox9.TabIndex = 14
+        Me.ColorBox9.TabStop = False
         '
-        'PictureBox9
+        'ColorBox8
         '
-        Me.PictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox9.Location = New System.Drawing.Point(1651, 279)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(61, 56)
-        Me.PictureBox9.TabIndex = 13
-        Me.PictureBox9.TabStop = False
+        Me.ColorBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ColorBox8.Location = New System.Drawing.Point(1651, 279)
+        Me.ColorBox8.Name = "ColorBox8"
+        Me.ColorBox8.Size = New System.Drawing.Size(61, 56)
+        Me.ColorBox8.TabIndex = 13
+        Me.ColorBox8.TabStop = False
         '
-        'PictureBox8
+        'ColorBox7
         '
-        Me.PictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox8.Location = New System.Drawing.Point(1571, 279)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(61, 56)
-        Me.PictureBox8.TabIndex = 12
-        Me.PictureBox8.TabStop = False
+        Me.ColorBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ColorBox7.Location = New System.Drawing.Point(1571, 279)
+        Me.ColorBox7.Name = "ColorBox7"
+        Me.ColorBox7.Size = New System.Drawing.Size(61, 56)
+        Me.ColorBox7.TabIndex = 12
+        Me.ColorBox7.TabStop = False
         '
         'ThicknessSlider
         '
@@ -326,15 +326,15 @@ Partial Class EtchASketchForm
         Me.Controls.Add(Me.ThicknessValueLabel)
         Me.Controls.Add(Me.ThicknessLabel)
         Me.Controls.Add(Me.ThicknessSlider)
-        Me.Controls.Add(Me.PictureBox10)
-        Me.Controls.Add(Me.PictureBox9)
-        Me.Controls.Add(Me.PictureBox8)
-        Me.Controls.Add(Me.PictureBox7)
-        Me.Controls.Add(Me.PictureBox6)
-        Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.ColorBox9)
+        Me.Controls.Add(Me.ColorBox8)
+        Me.Controls.Add(Me.ColorBox7)
+        Me.Controls.Add(Me.ColorBox6)
+        Me.Controls.Add(Me.ColorBox5)
+        Me.Controls.Add(Me.ColorBox4)
+        Me.Controls.Add(Me.ColorBox3)
+        Me.Controls.Add(Me.ColorBox2)
+        Me.Controls.Add(Me.ColorBox1)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.ClearButton)
         Me.Controls.Add(Me.DrawWaveformsButton)
@@ -349,15 +349,15 @@ Partial Class EtchASketchForm
         CType(Me.DisplayPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip.ResumeLayout(False)
         Me.MenuStrip.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ColorBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ColorBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ColorBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ColorBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ColorBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ColorBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ColorBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ColorBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ColorBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ThicknessSlider, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -379,15 +379,15 @@ Partial Class EtchASketchForm
     Friend WithEvents DrawWaveformsButton As Button
     Friend WithEvents ExitButton As Button
     Friend WithEvents ClearButton As Button
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents PictureBox10 As PictureBox
-    Friend WithEvents PictureBox9 As PictureBox
-    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents ColorBox1 As PictureBox
+    Friend WithEvents ColorBox2 As PictureBox
+    Friend WithEvents ColorBox3 As PictureBox
+    Friend WithEvents ColorBox6 As PictureBox
+    Friend WithEvents ColorBox5 As PictureBox
+    Friend WithEvents ColorBox4 As PictureBox
+    Friend WithEvents ColorBox9 As PictureBox
+    Friend WithEvents ColorBox8 As PictureBox
+    Friend WithEvents ColorBox7 As PictureBox
     Friend WithEvents ToolTip As ToolTip
     Friend WithEvents ColorDialog1 As ColorDialog
     Friend WithEvents ThicknessSlider As TrackBar
